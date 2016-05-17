@@ -20020,7 +20020,7 @@
 		},
 		"devDependencies": {
 			"p-s": "0.7.1",
-			"react-component-template": "0.1.0"
+			"react-component-template": "0.1.1"
 		}
 	};
 
