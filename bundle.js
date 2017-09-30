@@ -33,9 +33,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -63,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,27 +71,48 @@ module.exports = React;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_css__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__app_css__);
+/* global document */
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.App = undefined;
 
+
+
+
+var appRoot = document.createElement('div');
+
+appRoot.id = 'app';
+document.body.appendChild(appRoot);
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__App__["a" /* App */], null), appRoot);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = ReactDOM;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return App; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_Component__ = __webpack_require__(4);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Component = __webpack_require__(5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -102,31 +120,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+
+
+
 var On = function On(props) {
-  return _react2.default.createElement('div', _extends({ className: 'on' }, props));
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', _extends({ className: 'on' }, props));
 };
 var Off = function Off(props) {
-  return _react2.default.createElement('div', _extends({ className: 'off' }, props));
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', _extends({ className: 'off' }, props));
 };
 
 var Clickable = function Clickable() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h2',
       null,
       'Clickable'
     ),
-    _react2.default.createElement(
-      _Component.ReactSwap,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
       null,
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         Off,
         { 'data-swap-handler': 1 },
         'OFF'
       ),
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         On,
         { 'data-swap-handler': 1 },
         'ON'
@@ -136,23 +157,23 @@ var Clickable = function Clickable() {
 };
 
 var Hoverable = function Hoverable() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h2',
       null,
       'Hoverable'
     ),
-    _react2.default.createElement(
-      _Component.ReactSwap,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
       { isHover: true },
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         Off,
         { 'data-swap-handler': 1 },
         'OFF'
       ),
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         On,
         null,
         'ON'
@@ -162,23 +183,23 @@ var Hoverable = function Hoverable() {
 };
 
 var Delayed = function Delayed() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h2',
       null,
       'Hoverable with delay'
     ),
-    _react2.default.createElement(
-      _Component.ReactSwap,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
       { delay: 200, isHover: true },
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         Off,
         null,
         'OFF'
       ),
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         On,
         null,
         'ON'
@@ -188,38 +209,38 @@ var Delayed = function Delayed() {
 };
 
 var Deep = function Deep() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     null,
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h2',
       null,
       'Deep Swap'
     ),
-    _react2.default.createElement(
-      _Component.ReactSwap,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
       null,
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           { 'data-swap-handler': 1, style: { marginLeft: 20 } },
           'Click me'
         )
       ),
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h3',
           { 'data-swap-handler': 1, style: { marginLeft: 20 } },
           'Unclick me'
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { style: { marginLeft: 50 } },
-          _react2.default.createElement(Clickable, null)
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Clickable, null)
         )
       )
     )
@@ -227,48 +248,48 @@ var Deep = function Deep() {
 };
 
 var Table = function Table() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'table',
     { style: { backgroundColor: 'rgba(0, 0, 0, 0.05)' } },
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'tbody',
       null,
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'tr',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'td',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h2',
             null,
             'Table Swap'
           )
         )
       ),
-      _react2.default.createElement(
-        _Component.ReactSwap,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'td',
             null,
-            _react2.default.createElement(
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h3',
               { 'data-swap-handler': 1, style: { marginLeft: 20 } },
               'Click me'
             )
           )
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'td',
             null,
-            _react2.default.createElement(
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h3',
               { 'data-swap-handler': 1, style: { marginLeft: 20 } },
               'Unclick me'
@@ -281,19 +302,19 @@ var Table = function Table() {
 };
 
 var DeepTableSwap = function DeepTableSwap() {
-  return _react2.default.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'table',
     { style: { backgroundColor: 'rgba(0, 0, 0, 0.05)' } },
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'tbody',
       null,
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'tr',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'td',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h2',
             null,
             'Deep Table Swap'
@@ -301,19 +322,19 @@ var DeepTableSwap = function DeepTableSwap() {
         )
       )
     ),
-    _react2.default.createElement(
-      _Component.ReactSwap,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
       null,
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'tbody',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'td',
             null,
-            _react2.default.createElement(
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h3',
               { 'data-swap-handler': 1, style: { marginLeft: 20 } },
               'Click me'
@@ -321,24 +342,24 @@ var DeepTableSwap = function DeepTableSwap() {
           )
         )
       ),
-      _react2.default.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'tbody',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'tr',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'td',
             null,
-            _react2.default.createElement(
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h3',
               { 'data-swap-handler': 1, style: { marginLeft: 20 } },
               'Unclick me'
             ),
-            _react2.default.createElement(
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'div',
               { style: { marginLeft: 20 } },
-              _react2.default.createElement(Table, null)
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Table, null)
             )
           )
         )
@@ -369,25 +390,25 @@ var WithCallback = function (_React$Component) {
   _createClass(WithCallback, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h2',
           null,
           'With callback (opened: ',
           this.state.opened ? 'yes' : 'no',
           ')'
         ),
-        _react2.default.createElement(
-          _Component.ReactSwap,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
           { onSwap: this.onSwap },
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             Off,
             { 'data-swap-handler': 1 },
             'OFF'
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             On,
             { 'data-swap-handler': 1 },
             'ON'
@@ -398,7 +419,7 @@ var WithCallback = function (_React$Component) {
   }]);
 
   return WithCallback;
-}(_react2.default.Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 var ToggleFromOutside = function (_React$Component2) {
   _inherits(ToggleFromOutside, _React$Component2);
@@ -422,28 +443,28 @@ var ToggleFromOutside = function (_React$Component2) {
   _createClass(ToggleFromOutside, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         null,
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h2',
           null,
           'Toggle from outside \xA0',
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'button',
             { onClick: this.onClick },
             'toggle'
           )
         ),
-        _react2.default.createElement(
-          _Component.ReactSwap,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* ReactSwap */],
           { isSwapped: this.state.opened },
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             Off,
             null,
             'OFF'
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             On,
             null,
             'ON'
@@ -454,88 +475,37 @@ var ToggleFromOutside = function (_React$Component2) {
   }]);
 
   return ToggleFromOutside;
-}(_react2.default.Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-var App = exports.App = function App() {
-  return _react2.default.createElement(
+var App = function App() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     { className: 'app' },
-    _react2.default.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'h1',
       null,
       'react-swap'
     ),
-    _react2.default.createElement(Clickable, null),
-    _react2.default.createElement(Hoverable, null),
-    _react2.default.createElement(Delayed, null),
-    _react2.default.createElement(Deep, null),
-    _react2.default.createElement(Table, null),
-    _react2.default.createElement(DeepTableSwap, null),
-    _react2.default.createElement(WithCallback, null),
-    _react2.default.createElement(ToggleFromOutside, null)
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Clickable, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Hoverable, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Delayed, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Deep, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Table, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(DeepTableSwap, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(WithCallback, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ToggleFromOutside, null)
   );
 };
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = ReactDOM;
-
-/***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(3);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _App = __webpack_require__(1);
-
-__webpack_require__(2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/* global document */
-
-var appRoot = document.createElement('div');
-
-appRoot.id = 'app';
-document.body.appendChild(appRoot);
-_reactDom2.default.render(_react2.default.createElement(_App.App, null), appRoot);
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ReactSwap = undefined;
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReactSwap; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -543,9 +513,11 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+
+
 var noop = function noop() {};
 
-var ReactSwap = exports.ReactSwap = function (_React$Component) {
+var ReactSwap = function (_React$Component) {
   _inherits(ReactSwap, _React$Component);
 
   function ReactSwap(props) {
@@ -633,13 +605,12 @@ var ReactSwap = exports.ReactSwap = function (_React$Component) {
       var content = this.state.isSwapped ? this.props.children[1] : this.props.children[0];
       var props = this.props.isHover ? { onMouseLeave: this.hide, onMouseEnter: this.expand } : { onClick: this.onClick };
 
-      return _react2.default.cloneElement(content, props);
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.cloneElement(content, props);
     }
   }]);
 
   return ReactSwap;
-}(_react2.default.Component);
-
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 ReactSwap.defaultProps = {
   isHover: false,
   isSwapped: false,
@@ -647,6 +618,12 @@ ReactSwap.defaultProps = {
   dataHandler: 'swapHandler',
   onSwap: noop
 };
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
